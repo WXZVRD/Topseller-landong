@@ -1,0 +1,114 @@
+.purple__text{
+  color: $LightPurple;
+}
+
+.green__text{
+  color: $DarkGreen;
+}
+
+.emerald__text{
+  color: $emerald;
+}
+
+h1{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 140%;
+
+  color: $white;
+
+}
+h2{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 90%;
+
+  color: $black;
+
+}
+h3{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+
+  color: $white;
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+
+p{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+
+  color: $DarkWhite;
+}
+
+
+button{
+  padding: 17px 0;
+  text-align: center;
+  width: 100%;
+  transition: .1s ease;
+  border-radius: 17px 25px;
+}
+
+.btn_green{
+  border-radius: 30px;
+  padding: 17px 31px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+
+  background-color: $emerald;
+
+  color: #101010;
+}
+
+button:is(:hover, :active){
+  font-weight: 700;
+}
+
+.btn_gray{
+  padding: 17px 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+
+  text-align: center;
+  background-color: #373737;
+
+  color: $white;
+
+}
+
+
+
+
+

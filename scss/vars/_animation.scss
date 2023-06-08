@@ -1,0 +1,33 @@
+
+
+@keyframes smallGradient {
+
+  0%{
+    background-position-x: 0;
+  }
+
+  50%{
+    background-position-x: -200px;
+  }
+
+  100%{
+    background-position-x: 0;
+  }
+
+}
+
+@keyframes bigGradient {
+
+  0%{
+    background-position-x: 0;
+  }
+
+  50%{
+    background-position-x: -700px;
+  }
+
+  100%{
+    background-position-x: 0;
+  }
+
+}

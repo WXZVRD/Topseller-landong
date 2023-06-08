@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-style: normal;
+    src: local("SF Pro Display"),
+         url("SFPRODISPLAYBOLD.woff2") format('woff2'),
+         url("SFPRODISPLAYBOLD.woff") format('woff'),
+         url("SFPRODISPLAYBOLD.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-style: normal;
+    src: local("SF Pro Display"),
+    url("SFPRODISPLAYREGULAR.woff2") format('woff2'),
+    url("SFPRODISPLAYREGULAR.woff") format('woff'),
+    url("SFPRODISPLAYREGULAR.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    font-style: normal;
+    src: local("SF Pro Display"),
+    url("SFPRODISPLAYMEDIUM.woff2") format('woff2'),
+    url("SFPRODISPLAYMEDIUM.woff") format('woff'),
+    url("SFPRODISPLAYMEDIUM.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    font-style: normal;
+    src: local("SF Pro Display"),
+    url("SF-PRO-Display-Semibold.woff2") format('woff2'),
+    url("SF-PRO-Display-Semibold.woff") format('woff'),
+    url("SF-PRO-Display-Semibold.eot") format('eot');
+    font-display: swap;
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-style: normal;
+    src: local("SF Pro Display"),
+    url("SFPRODISPLAYBOLD.woff2") format('woff2'),
+    url("SFPRODISPLAYBOLD.woff") format('woff'),
+    url("SFPRODISPLAYBOLD.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Open Sans"),
+    url("OpenSans-REGULAR.woff2") format('woff2'),
+    url("OpenSans-REGULAR.woff") format('woff'),
+    url("OpenSans-Regular.otf") format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Open Sans"),
+    url("OpenSans-Bold.woff2") format('woff2'),
+    url("OpenSans-Bold.woff") format('woff'),
+    url("OpenSans-Bold.otf") format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Open Sans"),
+    url("OpenSans-Semibold.woff2") format('woff2'),
+    url("OpenSans-Semibold.woff") format('woff'),
+    url("OpenSans-Semibold.otf") format('otf');
+    font-display: swap;
+}@font-face {
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Open Sans"),
+    url("OpenSans-Medium.woff2") format('woff2'),
+    url("OpenSans-Medium.woff") format('woff'),
+    url("OpenSans-Medium.otf") format('otf');
+    font-display: swap;
+}
