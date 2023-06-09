@@ -70,6 +70,8 @@ tlFunction.from(".function__overlay",{opacity : 0, duration : .5, delay : .2})
     .fromTo(".start__block", {display : "block"}, {display: "none", duration : .1, delay : 0})
     .fromTo(".end__block", {display : "none"}, {display: "block", delay : .2})
     .fromTo(".function__overlay", {opacity : 1}, {opacity : 0, delay : .2})
+    .fromTo(".function__overlay", {opacity : 0}, {opacity : 1, delay : .6})
+
 
 
 const tlProduct = gsap.timeline()

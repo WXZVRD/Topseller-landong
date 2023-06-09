@@ -1248,6 +1248,108 @@
     margin: 0;
   }
 }
+.reason .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.reason__title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+  color: #FFFFFF;
+  max-width: 440px;
+}
+
+.reason__content {
+  max-width: 710px;
+}
+
+.reason__content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.reason__content-item__title {
+  max-width: 280px;
+  width: 100%;
+}
+
+.reason__content-item__bottom {
+  max-width: 438px;
+  width: 100%;
+}
+
+.item__bottom-text {
+  margin-bottom: 20px;
+}
+
+.item__bottom-list__item {
+  margin-bottom: 6px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  color: #E1E1E1;
+}
+
+@media screen and (max-width: 1024px) {
+  .reason__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+  .reason__content-item__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+  .item__bottom-text {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    /* or 21px */
+    /* For dark mode/Grainsboro */
+    color: #E1E1E1;
+  }
+  .item__bottom-list__item {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    /* or 21px */
+    /* For dark mode/Grainsboro */
+    color: #E1E1E1;
+  }
+  .reason__content-item__bottom {
+    max-width: 371px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reason .container {
+    flex-direction: column;
+  }
+  .reason__title {
+    margin-bottom: 80px;
+  }
+}
 /* ALL COLLORS PALLETE */
 /* ALL COLLORS PALLETE */
 .purple__text {
@@ -1287,6 +1389,19 @@ h3 {
   font-size: 25px;
   line-height: 140%;
   color: #ffffff;
+}
+
+h4 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120%;
+  /* or 50px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
 }
 
 p {
