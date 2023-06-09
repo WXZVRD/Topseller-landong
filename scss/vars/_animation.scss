@@ -19,15 +19,74 @@
 @keyframes bigGradient {
 
   0%{
-    background-position-x: 0;
+    left: -50px;
   }
 
   50%{
-    background-position-x: -700px;
+    left: 340px;
   }
 
   100%{
-    background-position-x: 0;
+    left: -50px;
   }
 
+}
+
+@keyframes bigGradient_lg {
+
+  0%{
+    left: 50px;
+  }
+
+  50%{
+    left: -161px;
+  }
+
+  100%{
+    left: 50px;
+  }
+
+}
+
+@keyframes bigGradient_medium {
+
+  0%{
+    left: -20px;
+  }
+
+  50%{
+    left: -590px;
+  }
+
+  100%{
+    left: -20px;
+  }
+
+}
+
+@keyframes bigGradient_small {
+
+  0%{
+    width: 150px;
+  }
+
+  50%{
+    width: 300px;
+  }
+
+  100%{
+    width: 150px;
+  }
+
+}
+
+
+@keyframes pimGradient {
+  0% {
+    left: -80px;
+  }
+
+  100%{
+    left: -435px;
+  }
 }

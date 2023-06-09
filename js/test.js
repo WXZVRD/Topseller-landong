@@ -55,6 +55,23 @@ tlVideo.add(
     gsap.to(".video",{x : "-50%", left : "50%", width : width - 100, rotation : 0, ease: "power1.inOut", duration : 2}),
 )
 
+const tlFunction = gsap.timeline({
+    defaults: {
+        duration : 1,
+        ease : "linear",
+    }
+})
+
+tlFunction.from(".function__overlay",{opacity : 0, duration : .5, delay : .2})
+    .fromTo('.info__line',{width : 0}, {width : "100%", delay : 1})
+    .fromTo(".manage__line", {width : 0}, {width : "100%", delay: 0})
+    .fromTo(".function__overlay", {opacity : 0}, {opacity : 1, duration : .2, delay : 0})
+    .fromTo(".start__block", {display : "block"}, {display: "none", duration : .1, delay : 0})
+    .fromTo(".end__block", {display : "none"}, {display: "block", delay : .2})
+    .fromTo(".function__overlay", {opacity : 1}, {opacity : 0, delay : .2})
+
+
+
 ScrollTrigger.create({
     trigger: ".header",
     start: "top top",
@@ -69,7 +86,7 @@ ScrollTrigger.create({
 })
 
 ScrollTrigger.create({
-    trigger : ".header__video",
+    trigger : ".header__text",
     start : "top top",
     end : "+=200",
     animation : tlVideo,

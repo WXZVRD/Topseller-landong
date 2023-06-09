@@ -446,6 +446,360 @@
     top: 160px;
   }
 }
+.function {
+  padding: 200px 0 0 0;
+  position: relative;
+  height: 738px;
+}
+.function .container {
+  padding: 0 25px;
+}
+
+.start__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pim {
+  max-width: 210px;
+  padding: 30px 50px;
+  border-radius: 50px;
+  background: #101010;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px;
+}
+.pim span {
+  display: block;
+  position: relative;
+  z-index: 10;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.pim::after {
+  position: absolute;
+  content: "";
+  top: -170px;
+  left: -80px;
+  width: 670px;
+  height: 430px;
+  background-repeat: no-repeat;
+  background: url("../../img/pimGradient.png");
+  animation: pimGradient 4s ease-in infinite;
+}
+
+.start__content-textarea {
+  max-width: 1020px;
+  width: 100%;
+}
+.start__content-textarea h1 {
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+}
+.start__content-textarea h1 span {
+  display: inline-block;
+  height: 7px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.info__line {
+  max-width: 268px;
+}
+
+.function__overlay {
+  width: 100%;
+  z-index: 100;
+  height: 740px;
+  background: linear-gradient(0deg, rgb(16, 16, 16) 0%, rgb(16, 16, 16) 19%, rgb(16, 16, 16) 50%, rgb(16, 16, 16) 81%, rgb(16, 16, 16) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.end__block {
+  display: none;
+  width: 100%;
+  height: 550px;
+}
+
+.end__block-text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.topseller {
+  display: block;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 248px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 248px;
+  line-height: 90%;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  width: 1559px;
+  left: 326px;
+  height: 300px;
+  mix-blend-mode: darken;
+  background: url(../../img/gradient.jpg);
+  background-size: contain;
+  animation: bigGradient 2s linear infinite;
+}
+
+@media screen and (max-width: 1300px) {
+  .content::after {
+    animation: bigGradient_lg 1s linear infinite;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .start__content-textarea {
+    padding-right: 70px;
+    max-width: 671px;
+    width: 100%;
+  }
+  .start__content-textarea h1 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .start__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+  }
+  .content {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 175px;
+    line-height: 90%;
+    /* or 245px */
+    color: #FFFFFF;
+  }
+  .topseller {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 180px;
+    line-height: 110%;
+    /* or 252px */
+    color: #FFFFFF;
+  }
+  .end__block-text {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    /* identical to box height, or 35px */
+    color: #FFFFFF;
+  }
+  .function {
+    padding: 95px 0 0 0;
+    height: 630px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .start__content-textarea {
+    max-width: 520px;
+  }
+  .start__content-textarea h1 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .start__content-textarea h1 span {
+    height: 6px;
+  }
+  .info__line {
+    max-width: 145px;
+  }
+  .manage__line {
+    max-width: 225px;
+  }
+  .start__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .pim {
+    max-width: 205px;
+    border-radius: 20px;
+  }
+  .pim span {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .topseller {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 140%;
+    /* or 182px */
+    color: #FFFFFF;
+  }
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 110%;
+    /* or 182px */
+    color: #FFFFFF;
+  }
+  .content::after {
+    animation: bigGradient_medium 3s linear infinite;
+  }
+  .end__block-text {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    color: #FFFFFF;
+  }
+  .function {
+    padding: 36px 0 0 0;
+    height: 470px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .start__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 50px */
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  .start__content-textarea {
+    padding: 0;
+  }
+  .start__content-textarea h1 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    color: #FFFFFF;
+  }
+  .pim {
+    max-width: 100px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .end__block-text {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    color: #FFFFFF;
+  }
+  .topseller {
+    display: inline;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    /* identical to box height, or 45px */
+    color: #FFFFFF;
+  }
+  .content {
+    display: inline;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    /* or 45px */
+    color: #FFFFFF;
+  }
+  .content::after {
+    content: "";
+    position: absolute;
+    width: 245px;
+    left: 0;
+    height: 75px;
+    mix-blend-mode: darken;
+    background: url(../../img/gradient.jpg);
+    background-size: contain;
+    animation: bigGradient_small 2s infinite;
+  }
+  .function {
+    padding: 84px 0 0 0;
+    height: 300px;
+    margin: 0;
+  }
+}
 /* ALL COLLORS PALLETE */
 /* ALL COLLORS PALLETE */
 .purple__text {
@@ -550,13 +904,54 @@ button:is(:hover, :active) {
 }
 @keyframes bigGradient {
   0% {
-    background-position-x: 0;
+    left: -50px;
   }
   50% {
-    background-position-x: -700px;
+    left: 340px;
   }
   100% {
-    background-position-x: 0;
+    left: -50px;
+  }
+}
+@keyframes bigGradient_lg {
+  0% {
+    left: 50px;
+  }
+  50% {
+    left: -161px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+@keyframes bigGradient_medium {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: -590px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+@keyframes bigGradient_small {
+  0% {
+    width: 150px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes pimGradient {
+  0% {
+    left: -80px;
+  }
+  100% {
+    left: -435px;
   }
 }
 * {
