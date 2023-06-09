@@ -56,20 +56,34 @@ tlVideo.add(
 )
 
 const tlFunction = gsap.timeline({
-    defaults: {
+    repeat : -1,
+    defaults : {
         duration : 1,
-        ease : "linear",
+        ease : "linear"
     }
 })
 
 tlFunction.from(".function__overlay",{opacity : 0, duration : .5, delay : .2})
-    .fromTo('.info__line',{width : 0}, {width : "100%", delay : 1})
-    .fromTo(".manage__line", {width : 0}, {width : "100%", delay: 0})
+    .fromTo('.info__line',{width : 0}, {width : "100%", delay : 1, duration : 1})
+    .fromTo(".manage__line", {width : 0}, {width : "100%", delay: 0, duration : 1})
     .fromTo(".function__overlay", {opacity : 0}, {opacity : 1, duration : .2, delay : 0})
     .fromTo(".start__block", {display : "block"}, {display: "none", duration : .1, delay : 0})
     .fromTo(".end__block", {display : "none"}, {display: "block", delay : .2})
     .fromTo(".function__overlay", {opacity : 1}, {opacity : 0, delay : .2})
 
+
+const tlProduct = gsap.timeline()
+const tlEco = gsap.timeline({repeat: -1})
+
+tlProduct.fromTo(".bottom__block",{left : 15, bottom: 0,} ,{left : 45, bottom : 60, duration : 2, delay : 2, repeat : -1, yoyo : true})
+tlEco.fromTo(".present__element-plus", {background: "none"}, {background : "#5B5B5C", delay : 1, duration : .4})
+    .fromTo(".elem__not1", {display : "none"}, {display : "flex", duration : .4, delay : .4})
+    .to(".present__element-plus", {background: "transparent", delay : .4, duration : .4})
+    .fromTo(".present__element-plus", {background: "none"}, {background : "#5B5B5C", delay : 1, duration : .4})
+    .fromTo(".elem__not2", {display : "none"}, {display : "flex", duration : .4, delay : .4})
+    .to(".present__element-plus", {background: "transparent", delay : .4, duration : .4})
+    .fromTo(".present__element-plus", {background: "none"}, {background : "#5B5B5C", delay : 1, duration : .4})
+    .fromTo(".elem__not3", {display : "none"}, {display : "flex", duration : 1, delay : .4})
 
 
 ScrollTrigger.create({
