@@ -1,0 +1,112 @@
+.together{
+
+}
+
+.together__top{
+  max-width: 1280px;
+  height: 600px;
+  padding: 30px;
+  background-image: url("../../img/together.jpg");
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: flex;
+  align-items: end;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.together__top-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 306px;
+}
+
+.together__top-title{
+  z-index: 2;
+}
+
+.together__bottom{
+  padding-top: 60px;
+}
+
+.together__bottom-title{
+  margin-bottom: 40px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 90%;
+
+  color: #FFFFFF;
+
+}
+
+.together__bottom-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.together__bottom-cards__item{
+  background: #A5A1FF;
+  border-radius: 30px;
+  max-width: 413px;
+  width: 100%;
+  height: 262px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+
+    &::after{
+      top: 80px;
+    }
+  }
+}
+
+.together__bottom-cards__item::after{
+  position: absolute;
+  content: "";
+  width: 500px;
+  transition: all 1s;
+
+  height: 700px;
+  top: 130px;
+  left: 10px;
+  background: #8782FF;
+  filter: blur(50px);
+}
+
+
+
+.cards__item-text{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  z-index: 2;
+
+
+  color: #000000;
+}
+
+.cards__item-title{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 140%;
+  z-index: 2;
+
+  color: #101010;
+}

@@ -1,14 +1,12 @@
 @import "fonts/fonts.css";
 @import "scss/blocks/_header.scss";
 @import "scss/blocks/_advantages";
-@import "scss/blocks/_cards.scss";
-@import "scss/blocks/_cardSlider.scss";
 @import "scss/blocks/_cost.scss";
 @import "scss/blocks/_footer.scss";
-@import "scss/blocks/_header.scss";
 @import "scss/blocks/_presentation.scss";
 @import "scss/blocks/_functions.scss";
 @import "scss/blocks/_reason.scss";
+@import "scss/blocks/_together.scss";
 
 
 @import "scss/vars/_vars.scss";
@@ -39,7 +37,7 @@ body{
 }
 
 section{
-  margin: 60px 0;
+  padding: 60px 0;
 }
 .section{
   width: 100%;
