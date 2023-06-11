@@ -1,6 +1,16 @@
 import {RangeSlider} from "./RangeSlider.js";
 const SliderRange = new RangeSlider("range__slider", "progressBar", "resItem", "resCost")
 
+const burger = document.querySelector(".burger")
+burger.addEventListener("click", () => {
+    const menu = document.querySelector(".burger__menu")
+    if (!menu.matches(".burger__active")){
+        menu.classList.add("burger__active")
+    } else{
+        menu.classList.remove("burger__active")
+    }
+})
+
 gsap.registerPlugin(ScrollTrigger)
 const logo = document.querySelector(".logo__svg")
 

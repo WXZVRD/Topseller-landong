@@ -1,6 +1,66 @@
 @charset "UTF-8";
 @import "fonts/fonts.css"; /* ALL COLLORS PALLETE */
 /* ALL COLLORS PALLETE */
+.burger__menu {
+  max-width: 522px;
+  width: 100%;
+  text-align: center;
+  padding: 0 0 10px 0;
+  border: 1px solid #444444;
+  background: rgba(16, 16, 16, 0.8);
+  box-shadow: 0px 27px 20px -20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  position: absolute;
+  top: -800px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.burger__active {
+  top: 54px;
+}
+
+.burger__menu-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+
+.burger__menu-list__item {
+  all: unset;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444444;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 590;
+  font-size: 18px;
+  line-height: 130%;
+  color: #B5B5B5;
+  cursor: pointer;
+}
+
+.burger__menu-btn {
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.burger__present-btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #4CC67F;
+  margin-top: 20px;
+}
+
 .header {
   position: relative;
   padding-top: 313px;
@@ -56,7 +116,12 @@
 }
 
 .burger {
+  cursor: pointer;
   border-left: 1px solid #444444;
+}
+
+.top__menu > .burger:active {
+  border-radius: 0;
 }
 
 .header__buttons {
