@@ -1,0 +1,68 @@
+
+
+.question{
+
+.container{
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+}
+
+.question__title{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 90%;
+  /* or 67px */
+
+
+  color: #FFFFFF;
+  margin-bottom: 30px;
+
+}
+
+.question__input{
+  all: unset;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 90%;
+  max-width: 363px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.64);
+  border-bottom: 1px solid $gray;
+  margin-right: 20px;
+
+}
+
+.question__btn{
+  text-align: center;
+  background-color: $white;
+  padding: 10px 18px;
+  border-radius: 30px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #101010;
+  width: 100%;
+  max-width: 167px;
+}
+
+.form__footer{
+  width: 100%;
+  max-width: 550px;
+}
+
+.form__footer form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

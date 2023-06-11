@@ -1,0 +1,37 @@
+.footer{
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0 30px;
+  }
+}
+
+.footer__logo{
+  width: 49px;
+  height: 63px;
+}
+
+.footer__list{
+  max-width: 160px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.footer__list-item{
+  margin-bottom: 30px;
+  list-style-type: none;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+
+  color: #FFFFFF;
+}
