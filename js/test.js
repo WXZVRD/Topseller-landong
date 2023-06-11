@@ -1,3 +1,7 @@
+import {RangeSlider} from "./RangeSlider.js";
+
+const SliderRange = new RangeSlider("range__slider", "progressBar", "resItem", "resCost")
+
 gsap.registerPlugin(ScrollTrigger)
 const logo = document.querySelector(".logo__svg")
 

@@ -90,7 +90,7 @@
 
                     <div class="overlay"></div>
 
-                    <video src="videoplayback.webm" autoplay muted loop class="video"></video>
+                    <video src="video/videoplayback.webm" autoplay muted loop class="video"></video>
 
                 </div>
 
@@ -490,6 +490,111 @@
 
         </section>
 
+        <section class="calculator">
+
+            <div class="container">
+
+                <div class="calculator__block">
+
+                    <h2 class="calculator__block-title"><span class="emerald__text">Дешевле</span> может быть только в сказке</h2>
+
+                    <div class="calculator__bottom">
+
+                        <div class="calculator__content">
+
+                            <div class="calculator__content-top">
+
+                                <h3 class="calculator__content-title">Никаких подводных камней, платите только за успешные операции
+                                    по выкладыванию карточек товаров</h3>
+
+                                <p class="calculator__content-text">Цена за один успешно выложенный товар – <span class="emerald__text">5 рублей</span> </p>
+
+                            </div>
+
+                            <div class="calculator__content-bottom">
+
+                                <h3 class="calculator__content-title">Сколько товаров вы планируете выложить через Content?</h3>
+
+                                <div class="calculator__indicator-block"    >
+
+                                    <span id="progressBar" class="bar"><span class="fill"></span></span>
+                                    <input id="range__slider" type="range" value="1000" min="1000" max="1000000" step="1" class="calculator__indicator">
+                                    
+                                </div>
+                                
+                                <ul class="indicator__dis">
+
+                                    <li class="indicator__dis-item"></li>
+                                    <li class="indicator__dis-item"></li>
+                                    <li class="indicator__dis-item"></li>
+                                    <li class="indicator__dis-item"></li>
+                                    <li class="indicator__dis-item"></li>
+                                    
+                                </ul>
+
+                                <div class="calculator__indicator-num">
+
+                                    <span class="indicator__num-item">1 000</span>
+
+                                    <span class="indicator__num-item">250 000</span>
+
+                                    <span class="indicator__num-item">500 000</span>
+
+                                    <span class="indicator__num-item">750 000</span>
+
+                                    <span class="indicator__num-item">1 000 000</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="result__content">
+
+                            <div class="result__content-top">
+
+                                <div class="item__result">
+
+                                    <p class="result__text">Товаров</p>
+
+                                    <span class="emerald__text" id="resItem">0 шт.</span>
+
+                                </div>
+
+                                <div class="separator"></div>
+
+                                <div class="cost__result">
+
+                                    <p class="result__text">Стоимость</p>
+
+                                    <span class="emerald__text" id="resCost">0 р</span>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="result__content-bottom">
+
+                                <p class="result__text">Используя Topseller Content, <span class="emerald__text">вы экономите</span> ,
+                                    в сравнении с другими сервисами, в среднем:</p>
+
+                                <span class="econom__cost">17 601 840 ₽</span>
+
+                                <button class="btn_green">Попробовать бесплатно</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </div>
 
 
@@ -499,7 +604,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="js/test.js" defer></script>
+    <script type="module" src="js/test.js" defer></script>
 
 </body>
 </html>

@@ -95,10 +95,12 @@ button{
   background-color: $emerald;
 
   color: #101010;
+  text-align: center;
 }
 
 button:is(:hover, :active){
   font-weight: 700;
+  cursor: pointer;
 }
 
 .btn_gray{
@@ -119,6 +121,9 @@ button:is(:hover, :active){
   color: $white;
 
 }
+
+
+
 
 
 

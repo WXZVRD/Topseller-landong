@@ -1,0 +1,421 @@
+
+
+
+.calculator{
+  background-color: $white;
+  .container{
+    padding: 0 10px;
+  }
+}
+
+.calculator__block{
+  width: 100%;
+  background-color: $black;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.calculator__block-title{
+  ont-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 90%;
+
+  color: $white;
+  margin-bottom: 40px;
+}
+
+
+.calculator__content{
+  max-width: 777px;
+  width: 100%;
+}
+
+.calculator__content-top{
+  margin-bottom: 40px;
+}
+
+.calculator__content-bottom{
+
+}
+
+.calculator__content-title{
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 590;
+  font-size: 18px;
+  line-height: 140%;
+
+  color: #FFFFFF;
+
+}
+
+.calculator__content-text{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+
+  color: #9B9B9B;
+}
+
+
+.calculator__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result__content{
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: #1C1C1C;
+  border-radius: 25px;
+  margin-left: 20px;
+
+}
+
+.result__content-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.result__content-bottom{
+  padding-top: 15px;
+  border-top: 1px solid #444444;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.econom__cost{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 90%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #9B9B9B;
+}
+
+.item__result{
+
+  span{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90%;
+    /* identical to box height, or 22px */
+
+
+    color: #4CC67F;
+  }
+}
+
+.separator{
+  width: 1px;
+  height: 46px;
+  background-color: #444444;
+}
+
+.cost__result{
+
+
+
+  span{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90%;
+    /* identical to box height, or 22px */
+
+
+    color: #4CC67F;
+  }
+}
+
+.result__text{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+
+
+
+
+.calculator__indicator{
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background: #EEEEEE;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+
+  &::-webkit-slider-thumb {
+    /* Стилизуем ползунок */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 35px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 1;
+    background: url("../../img/ui/slider.svg");
+  }
+
+}
+
+.bar{
+  position: absolute;
+  content: "";
+  top: 10px;
+  background-color: $emerald;
+  left: 0;
+  width:  0%;
+  height: 4px;
+  z-index: 2;
+}
+
+.calculator__indicator-block{
+  position: relative;
+}
+
+.calculator__indicator-num{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator__num-item{
+  font-family: 'Open Sans';
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+
+  color: #9B9B9B;
+  position: relative;
+  display: block;
+
+}
+
+.indicator__dis{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.indicator__dis-item{
+  height: 10px;
+  border-radius: 10px;
+  width: 2px;
+  margin-top: 10px;
+  background-color: $white;
+  &:first-child{
+    margin-left: 15px;
+  }
+  &:last-child{
+    margin-right: 15px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .calculator{
+
+    .container{
+
+      padding: 0 47px;
+    }
+  }
+
+  .calculator__block-title{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 90%;
+
+    color: $white;
+
+  }
+
+  .calculator__content{
+    max-width: 430px;
+  }
+
+  .result__content{
+    max-width: 400px;
+  }
+
+  .calculator__content-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  .calculator__content-text{
+    ont-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #9B9B9B;
+
+  }
+
+  .indicator__num-item{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    padding-top: 8px;
+    text-align: center;
+
+    color: #9B9B9B;
+  }
+
+}
+
+@media screen and (max-width: 860px) and (min-width: 500px) {
+
+  .calculator__bottom{
+    flex-direction: column;
+  }
+
+  .result__content{
+    margin: 0;
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .calculator__content{
+    max-width: 620px;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 360px) {
+
+  .calculator__bottom{
+    flex-direction: column;
+  }
+
+  .result__content{
+    margin: 0;
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .calculator__content{
+    max-width: 620px;
+    margin-bottom: 40px;
+  }
+
+
+
+  .result__content-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .separator{
+    width: 46px;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+
+  .calculator__block-title{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 90%;
+
+    color: $white;
+  }
+
+  .calculator__content-title{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+
+  }
+
+  .calculator__content-text{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+
+    color: #9B9B9B;
+  }
+
+  .indicator__num-item{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+
+
+    color: #9B9B9B;
+  }
+
+  .result__text{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+
+    color: #FFFFFF;
+
+  }
+
+}
+
+
+
