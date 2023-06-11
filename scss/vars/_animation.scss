@@ -1,20 +1,48 @@
 
 
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(-200);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+
+
+
 @keyframes smallGradient {
 
   0%{
-    background-position-x: 0;
+    background-position-x: 10px;
   }
 
   50%{
-    background-position-x: -200px;
+    background-position-x: -95px;
   }
 
   100%{
-    background-position-x: 0;
+    background-position-x: 10px;
   }
 
 }
+
+
+
+
+
 
 @keyframes bigGradient {
 
