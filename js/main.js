@@ -100,6 +100,15 @@ tlEco.fromTo(".present__element-plus", {background: "none"}, {background : "#5B5
     .fromTo(".present__element-plus", {background: "none"}, {background : "#5B5B5C", delay : 1, duration : .4})
     .fromTo(".elem__not3", {display : "none"}, {display : "flex", duration : 1, delay : .4})
 
+const tlLoader = new gsap.timeline()
+tlLoader.to(".wrapper", {display : "none", opacity : 0})
+    .fromTo(".loader__first", {x : 0, y : 0}, {x : 10, y : -40, duration: 1})
+    .fromTo(".loader__second", {x : 0, y : 0}, {x : -10, y : 40, duration: 1})
+    .fromTo(".loader", {opacity : 1}, {opacity : 0, duration: 1})
+    .to(".wrapper", {display : "block", opacity : 1})
+    .to(".loader", {display : "none"})
+
+
 
 ScrollTrigger.create({
     trigger: ".header",
