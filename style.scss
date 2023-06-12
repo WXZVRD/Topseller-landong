@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./fonts/fonts.scss";
 @import "./scss/vars/_vars.scss";
 @import "./scss/vars/_utils.scss";
@@ -50,3 +51,57 @@ section{
   background: blue;
   height: 4000px;
 }
+=======
+@import "./fonts/fonts.css";
+@import "./scss/vars/_vars.scss";
+@import "./scss/vars/_utils.scss";
+@import "./scss/vars/_base.scss";
+@import "./scss/vars/_animation.scss";
+@import "./scss/vars/normalize.scss";
+
+
+@import "./scss/blocks/_header.scss";
+@import "./scss/blocks/_advantages";
+@import "./scss/blocks/_cost.scss";
+@import "./scss/blocks/_footer.scss";
+@import "./scss/blocks/_presentation.scss";
+@import "./scss/blocks/_functions.scss";
+@import "./scss/blocks/_reason.scss";
+@import "./scss/blocks/_together.scss";
+@import "./scss/blocks/_calculator.scss";
+@import "./scss/blocks/_banner.scss";
+@import "./scss/blocks/_question.scss";
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $black;
+}
+.wrapper{
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+section{
+  padding: 60px 0;
+}
+.section{
+  width: 100%;
+  background: blue;
+  height: 4000px;
+}
+>>>>>>> 083a58c06bf8a94e34d474f09d127ce38f5c3e4c
