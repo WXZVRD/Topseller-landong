@@ -1,22 +1,25 @@
-@import "fonts/fonts.css";
-@import "scss/blocks/_header.scss";
-@import "scss/blocks/_advantages";
-@import "scss/blocks/_cost.scss";
-@import "scss/blocks/_footer.scss";
-@import "scss/blocks/_presentation.scss";
-@import "scss/blocks/_functions.scss";
-@import "scss/blocks/_reason.scss";
-@import "scss/blocks/_together.scss";
-@import "scss/blocks/_calculator.scss";
-@import "scss/blocks/_banner.scss";
-@import "scss/blocks/_question.scss";
+@import "./fonts/fonts.css";
+@import "./scss/vars/_vars.scss";
+@import "./scss/vars/_utils.scss";
+@import "./scss/vars/_base.scss";
+@import "./scss/vars/_animation.scss";
+@import "./scss/vars/normalize.scss";
 
 
-@import "scss/vars/_vars.scss";
-@import "scss/vars/_utils.scss";
-@import "scss/vars/_base.scss";
-@import "scss/vars/_animation.scss";
-@import "scss/vars/normalize.scss";
+@import "./scss/blocks/_header.scss";
+@import "./scss/blocks/_advantages";
+@import "./scss/blocks/_cost.scss";
+@import "./scss/blocks/_footer.scss";
+@import "./scss/blocks/_presentation.scss";
+@import "./scss/blocks/_functions.scss";
+@import "./scss/blocks/_reason.scss";
+@import "./scss/blocks/_together.scss";
+@import "./scss/blocks/_calculator.scss";
+@import "./scss/blocks/_banner.scss";
+@import "./scss/blocks/_question.scss";
+
+
+
 
 *{
   margin: 0;

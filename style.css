@@ -1,6 +1,199 @@
 @charset "UTF-8";
-@import "fonts/fonts.css"; /* ALL COLLORS PALLETE */
+@import "./fonts/fonts.css"; /* ALL COLLORS PALLETE */
 /* ALL COLLORS PALLETE */
+.purple__text {
+  color: #A5A1FF;
+}
+
+.green__text {
+  color: #27AE60;
+}
+
+.emerald__text {
+  color: #4CC67F;
+}
+
+h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 90%;
+  color: #101010;
+}
+
+h3 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+h4 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120%;
+  /* or 50px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  color: #E1E1E1;
+}
+
+button {
+  padding: 17px 0;
+  text-align: center;
+  width: 100%;
+  transition: 0.1s ease;
+  border-radius: 17px 25px;
+}
+
+.btn_green {
+  border-radius: 30px;
+  padding: 17px 31px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  background-color: #4CC67F;
+  color: #101010;
+  text-align: center;
+}
+
+button:is(:hover, :active) {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn_gray {
+  padding: 17px 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  background-color: #373737;
+  color: #ffffff;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(-200);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes smallGradient {
+  0% {
+    background-position-x: 10px;
+  }
+  50% {
+    background-position-x: -95px;
+  }
+  100% {
+    background-position-x: 10px;
+  }
+}
+@keyframes bigGradient {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: 340px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+@keyframes bigGradient_lg {
+  0% {
+    left: 50px;
+  }
+  50% {
+    left: -161px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+@keyframes bigGradient_medium {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: -590px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+@keyframes bigGradient_small {
+  0% {
+    width: 150px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes pimGradient {
+  0% {
+    left: -80px;
+  }
+  100% {
+    left: -435px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
 .loader {
   position: absolute;
   top: 0;
@@ -2173,201 +2366,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* ALL COLLORS PALLETE */
-/* ALL COLLORS PALLETE */
-.purple__text {
-  color: #A5A1FF;
-}
-
-.green__text {
-  color: #27AE60;
-}
-
-.emerald__text {
-  color: #4CC67F;
-}
-
-h1 {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 140%;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 90%;
-  color: #101010;
-}
-
-h3 {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 140%;
-  color: #ffffff;
-}
-
-h4 {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 120%;
-  /* or 50px */
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.01em;
-  color: #FFFFFF;
-}
-
-p {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  /* or 25px */
-  color: #E1E1E1;
-}
-
-button {
-  padding: 17px 0;
-  text-align: center;
-  width: 100%;
-  transition: 0.1s ease;
-  border-radius: 17px 25px;
-}
-
-.btn_green {
-  border-radius: 30px;
-  padding: 17px 31px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  background-color: #4CC67F;
-  color: #101010;
-  text-align: center;
-}
-
-button:is(:hover, :active) {
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn_gray {
-  padding: 17px 31px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 30px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  background-color: #373737;
-  color: #ffffff;
-}
-
-@keyframes moveLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-}
-@keyframes moveRight {
-  0% {
-    transform: translateX(-200);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes smallGradient {
-  0% {
-    background-position-x: 10px;
-  }
-  50% {
-    background-position-x: -95px;
-  }
-  100% {
-    background-position-x: 10px;
-  }
-}
-@keyframes bigGradient {
-  0% {
-    left: -50px;
-  }
-  50% {
-    left: 340px;
-  }
-  100% {
-    left: -50px;
-  }
-}
-@keyframes bigGradient_lg {
-  0% {
-    left: 50px;
-  }
-  50% {
-    left: -161px;
-  }
-  100% {
-    left: 50px;
-  }
-}
-@keyframes bigGradient_medium {
-  0% {
-    left: -20px;
-  }
-  50% {
-    left: -590px;
-  }
-  100% {
-    left: -20px;
-  }
-}
-@keyframes bigGradient_small {
-  0% {
-    width: 150px;
-  }
-  50% {
-    width: 300px;
-  }
-  100% {
-    width: 150px;
-  }
-}
-@keyframes pimGradient {
-  0% {
-    left: -80px;
-  }
-  100% {
-    left: -435px;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-button {
-  all: unset;
 }
 
 * {
