@@ -272,7 +272,7 @@ button {
 .header {
   position: relative;
   padding-top: 313px;
-  background: url(../../img/header/notebook.png);
+  background: url(/img/header/notebook.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1983,7 +1983,7 @@ button {
   left: 40px;
   cursor: pointer;
   z-index: 1;
-  background: url("../../img/ui/slider.svg");
+  background: url("/img/ui/slider.svg");
 }
 
 .bar {
@@ -2192,7 +2192,7 @@ button {
   mix-blend-mode: lighten;
   position: absolute;
   content: "";
-  background: url("../../img/smGradient.jpg");
+  background: url("/img/smGradient.jpg");
   background-size: contain;
   width: 1300px;
   height: 312px;
